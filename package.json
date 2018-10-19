@@ -1,0 +1,15 @@
+{
+  "private": true,
+  "scripts": {
+    "build": "cd packages/graphqlgen-json-schema && yarn build && cd ../graphqlgen && yarn build",
+    "test": "yarn build && cd packages/graphqlgen && yarn test"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "prettier": {
+    "semi": false,
+    "trailingComma": "all",
+    "singleQuote": true
+  }
+}
